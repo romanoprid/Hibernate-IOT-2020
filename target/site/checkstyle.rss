@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>ua.lviv.iot - Checkstyle report</title>
+    <link>https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab</link>
+    <description>ua.lviv.iot - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2020</copyright>
+    <item>
+      <title>File: 30,
+             Errors: 0,
+             Warnings: 98,
+             Infos: 0
+      </title>
+            <link>https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.dao.implementation.SecurityDao.java">ua/lviv/iot/dao/implementation/SecurityDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.model.IGeneralModel.java">ua/lviv/iot/model/IGeneralModel.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.service.implementation.SecurityService.java">ua/lviv/iot/service/implementation/SecurityService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.dao.implementation.UserDao.java">ua/lviv/iot/dao/implementation/UserDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.controller.implementation.StoryController.java">ua/lviv/iot/controller/implementation/StoryController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.model.implementation.Initialization.java">ua/lviv/iot/model/implementation/Initialization.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.service.implementation.StoryService.java">ua/lviv/iot/service/implementation/StoryService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.dao.implementation.InitializationDao.java">ua/lviv/iot/dao/implementation/InitializationDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.service.implementation.GeneralService.java">ua/lviv/iot/service/implementation/GeneralService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.view.Printable.java">ua/lviv/iot/view/Printable.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.controller.implementation.InitializationController.java">ua/lviv/iot/controller/implementation/InitializationController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.controller.implementation.GeneralController.java">ua/lviv/iot/controller/implementation/GeneralController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.service.implementation.UserService.java">ua/lviv/iot/service/implementation/UserService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.persistance.ConnectionManager.java">ua/lviv/iot/persistance/ConnectionManager.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.controller.implementation.SaveOnTopController.java">ua/lviv/iot/controller/implementation/SaveOnTopController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.service.IGeneralService.java">ua/lviv/iot/service/IGeneralService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.dao.implementation.StoryDao.java">ua/lviv/iot/dao/implementation/StoryDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.controller.IGeneralController.java">ua/lviv/iot/controller/IGeneralController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.service.implementation.SaveOnTopService.java">ua/lviv/iot/service/implementation/SaveOnTopService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.view.MainView.java">ua/lviv/iot/view/MainView.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  28
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.model.implementation.Security.java">ua/lviv/iot/model/implementation/Security.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.model.implementation.User.java">ua/lviv/iot/model/implementation/User.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.model.implementation.Story.java">ua/lviv/iot/model/implementation/Story.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.dao.IGeneralDao.java">ua/lviv/iot/dao/IGeneralDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.model.implementation.SaveOnTop.java">ua/lviv/iot/model/implementation/SaveOnTop.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.service.implementation.InitializationService.java">ua/lviv/iot/service/implementation/InitializationService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.App.java">ua/lviv/iot/App.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.controller.implementation.UserController.java">ua/lviv/iot/controller/implementation/UserController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.dao.implementation.SaveOnTopDao.java">ua/lviv/iot/dao/implementation/SaveOnTopDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/jdbc_lab-jdbc_lab/checkstyle.html#ua.lviv.iot.controller.implementation.SecurityController.java">ua/lviv/iot/controller/implementation/SecurityController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

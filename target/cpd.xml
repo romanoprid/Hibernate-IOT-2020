@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="13" tokens="101">
+      <file column="5" endcolumn="20" endline="296" line="284"
+            path="C:\Users\User\IdeaProjects\DB_lab5\src\main\java\ua\lviv\iot\view\MainView.java"/>
+      <file column="5" endcolumn="20" endline="326" line="314"
+            path="C:\Users\User\IdeaProjects\DB_lab5\src\main\java\ua\lviv\iot\view\MainView.java"/>
+      <codefragment><![CDATA[    System.out.println("Enter new bloger: ");
+    String bloger = INPUT.nextLine();
+    System.out.println("Enter new link: ");
+    String link = INPUT.nextLine();
+    System.out.println("Enter new add_time: ");
+    int addTime = INPUT.nextInt();
+    System.out.println("Enter new content: ");
+    String content = INPUT.nextLine();
+    System.out.println("Enter new like_number: ");
+    int likeNumber = INPUT.nextInt();
+    System.out.println("Enter new share_number: ");
+    int shareNumber = INPUT.nextInt();
+    INPUT.nextLine();]]></codefragment>
+   </duplication>
+</pmd-cpd>
