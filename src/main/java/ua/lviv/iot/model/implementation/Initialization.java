@@ -8,11 +8,9 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "initialization", schema = "roman_oprysk4")
+@Table(name = "initialization", schema = "roman_oprysk")
 public class Initialization implements IGeneralModel {
-  public static String getTableName() {
-    return tableName;
-  }
+
 
   private static final String tableName = Initialization.class.getSimpleName();
   private Integer id;
@@ -29,7 +27,9 @@ public class Initialization implements IGeneralModel {
 
   }
 
-
+  public static String getTableName() {
+    return tableName;
+  }
   @Id
   @Column(name = "id")
   public Integer getId() {

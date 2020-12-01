@@ -9,7 +9,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "save_on_top", schema = "roman_oprysk4")
+@Table(name = "save_on_top", schema = "roman_oprysk")
 public  class SaveOnTop implements IGeneralModel  {
 
 
@@ -47,7 +47,7 @@ public  class SaveOnTop implements IGeneralModel  {
 
 
   @Basic
-  @Column(name = "positon")
+  @Column(name = "position")
   public Integer getPosition() {
     return position;
   }

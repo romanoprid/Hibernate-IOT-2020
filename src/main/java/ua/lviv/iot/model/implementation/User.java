@@ -9,7 +9,7 @@ import java.util.Set;
 
 
 @Entity
-@Table(name = "user", schema = "roman_oprysk4")
+@Table(name = "user", schema = "roman_oprysk")
 public class User implements IGeneralModel {
 
 
@@ -21,6 +21,7 @@ public class User implements IGeneralModel {
   private Integer followers;
   private Integer followings;
   private Integer posts;
+
 
   public User(Integer id, String name, Integer birthDate, Integer followers, Integer followings, Integer posts) {
     this.id = id;
@@ -121,21 +122,9 @@ public class User implements IGeneralModel {
     return Objects.hash(id, name, birthDate, followers, followings, posts);
   }
 
-  @ManyToMany
-  @JoinTable(name = "user_has_story",
-          joinColumns = @JoinColumn(name = "story_id"),
-          inverseJoinColumns = @JoinColumn(name = "user_id"))
-  Set<Story> storySet;
 
-//  @ManyToOne
-//  @JoinColumn(name = "story_id", referencedColumnName = "id", nullable = false)
-//  public Story getStoryId() {
-//    return storyId;
-//  }
-//
-//  public void setStoryId(Story storyId) {
-//    this.storyId = storyId;
-//  }
+
+
   @Override
   public String toString() {
     return "User{"

@@ -8,7 +8,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "story", schema = "roman_oprysk4")
+@Table(name = "story", schema = "roman_oprysk")
 public class Story implements IGeneralModel {
 
 
@@ -21,9 +21,10 @@ public class Story implements IGeneralModel {
   private String content;
   private Integer likeNumber;
   private Integer shareNumber;
+  private User userId;
 
   public Story(Integer id, String bloger, String link, Integer addTime, String content, Integer likeNumber,
-               Integer shareNumber) {
+               Integer shareNumber,User userId) {
     this.id = id;
     this.bloger = bloger;
     this.link = link;
@@ -31,6 +32,7 @@ public class Story implements IGeneralModel {
     this.content = content;
     this.likeNumber = likeNumber;
     this.shareNumber = shareNumber;
+    this.userId = userId;
   }
 
   public Story() {
@@ -134,6 +136,17 @@ public class Story implements IGeneralModel {
   @Override
   public int hashCode() {
     return Objects.hash(id, bloger, link, addTime, content, likeNumber, shareNumber);
+  }
+
+  @ManyToOne
+  @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
+  public User getUserId() {
+
+    return userId;
+  }
+
+  public void setUserId(User userId) {
+    this.userId = userId;
   }
 
   @Override

@@ -8,7 +8,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "security", schema = "roman_oprysk4")
+@Table(name = "security", schema = "roman_oprysk")
 public class Security implements IGeneralModel {
 
 
@@ -71,7 +71,7 @@ public class Security implements IGeneralModel {
   }
 
   @ManyToOne
-  @JoinColumn(name = "security", referencedColumnName = "id", nullable = false)
+  @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
   public User getUserId() {
     return userId;
   }

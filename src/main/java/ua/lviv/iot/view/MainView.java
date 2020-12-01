@@ -103,12 +103,16 @@ public class MainView {
   }
 
   private void createInitialization(Session session) throws SQLException {
-    System.out.println("Enter new initialization login: ");
+
+    System.out.println("Enter new login: ");
     String login = INPUT.nextLine();
-    System.out.println("Enter new initialization user_id: ");
+    System.out.println("Enter new user ID: ");
+    Integer userId = INPUT.nextInt();
     INPUT.nextLine();
-    Initialization entity = new Initialization(0, login);
+    User user = userController.getService().getById(userId, session);
+    Initialization entity = new Initialization(0, login, user);
     initializationController.create(entity, session);
+
   }
 
   private void deleteInitializationById(Session session) throws SQLException {
@@ -119,25 +123,23 @@ public class MainView {
   }
 
   private void updateInitializationById(Session session) throws SQLException {
-    System.out.println("Enter initialization id to update: ");
+    System.out.println("Enter Initialization ID to update: ");
     int id = INPUT.nextInt();
     INPUT.nextLine();
     Initialization oldInitialization = initializationController.getService().getById(id, session);
-    System.out.println("Enter new initialization login: ");
+    System.out.println("Enter new login: ");
     String login = INPUT.nextLine();
-    System.out.println("Enter new initialization user_id: ");
+    System.out.println("Enter new user ID: ");
     int userId = INPUT.nextInt();
     INPUT.nextLine();
 
     String newLogin = login;
-    Integer newUserId = userId;
-
-    if (login.equals("")) {
-      newLogin = oldInitialization.getLogin();
-    }
 
 
-    Initialization entity = new Initialization(id, newLogin);
+    if (login.equals("")) newLogin = oldInitialization.getLogin();
+    User newUser = userController.getService().getById(userId, session);
+
+    Initialization entity = new Initialization(id, newLogin, newUser);
     initializationController.update(entity, session);
   }
 
@@ -155,16 +157,22 @@ public class MainView {
   }
 
   private void createSaveOnTop(Session session) throws SQLException {
-    System.out.println("Enter new saveOnTop position: ");
-    int position = INPUT.nextInt();
-    System.out.println("Enter new saveOnTop status: ");
+    System.out.println("Enter new position: ");
+    Integer position = INPUT.nextInt();
+
+    System.out.println("Enter new position: ");
     String status = INPUT.nextLine();
-    System.out.println("Enter new saveOnTop story_id: ");
-    int storyId = INPUT.nextInt();
+
+    System.out.println("Enter new story ID: ");
+    Integer storyId = INPUT.nextInt();
+
     INPUT.nextLine();
-    SaveOnTop entity = new SaveOnTop(0, position, status);
+
+    Story story = storyController.getService().getById(storyId, session);
+    SaveOnTop entity = new SaveOnTop(0, position, status, story);
     saveOnTopController.create(entity, session);
   }
+
 
   private void deleteSaveOnTopById(Session session) throws SQLException {
     System.out.println("Enter ID to delete SaveOnTop: ");
@@ -182,13 +190,13 @@ public class MainView {
     int position = INPUT.nextInt();
     System.out.println("Enter new saveOnTop status: ");
     String status = INPUT.nextLine();
+    INPUT.nextLine();
     System.out.println("Enter new saveOnTop story_id: ");
     int storyId = INPUT.nextInt();
     INPUT.nextLine();
 
     Integer newPosition = position;
     String newStatus = status;
-    Integer newStoryID = storyId;
 
     if (position < 0) {
       newPosition = oldSaveOnTop.getPosition();
@@ -198,10 +206,8 @@ public class MainView {
       newStatus = oldSaveOnTop.getStatus();
     }
 
-
-
-
-    SaveOnTop entity = new SaveOnTop(id, newPosition, newStatus);
+    Story newStory = storyController.getService().getById(storyId, session);
+    SaveOnTop entity = new SaveOnTop(id, newPosition, newStatus, newStory);
     saveOnTopController.update(entity, session);
   }
 
@@ -218,13 +224,15 @@ public class MainView {
     securityController.getById(id, session);
   }
 
+
   private void createSecurity(Session session) throws SQLException {
     System.out.println("Enter new  password: ");
     String password = INPUT.nextLine();
     System.out.println("Enter new  user ID: ");
-
+    Integer userId = INPUT.nextInt();
     INPUT.nextLine();
-    Security entity = new Security(0, password);
+    User user = userController.getService().getById(userId, session);
+    Security entity = new Security(0, password, user);
     securityController.create(entity, session);
   }
 
@@ -234,6 +242,7 @@ public class MainView {
     INPUT.nextLine();
     securityController.delete(id, session);
   }
+
 
   private void updateSecurityById(Session session) throws SQLException {
     System.out.println("Enter story ID to update: ");
@@ -247,16 +256,14 @@ public class MainView {
     INPUT.nextLine();
 
     String newPassword = password;
-    Integer newUserId = userId;
 
 
     if (password.equals("")) {
       newPassword = oldSecurity.getPassword();
     }
+    User user = userController.getService().getById(userId, session);
 
-
-
-    Security entity = new Security(id, newPassword);
+    Security entity = new Security(id, newPassword, user);
     securityController.update(entity, session);
   }
 
@@ -287,7 +294,10 @@ public class MainView {
     System.out.println("Enter new share_number: ");
     int shareNumber = INPUT.nextInt();
     INPUT.nextLine();
-    Story entity = new Story(0, bloger, link, addTime, content, likeNumber, shareNumber);
+    System.out.println("Enter new story_id: ");
+    int userId = INPUT.nextInt();
+    User user = userController.getService().getById(userId, session);
+    Story entity = new Story(0, bloger, link, addTime, content, likeNumber, shareNumber, user);
     storyController.create(entity, session);
   }
 
@@ -344,7 +354,8 @@ public class MainView {
       newShareNumber = oldStory.getShareNumber();
     }
 
-    Story entity = new Story(id, newBloger, newLink, newAddTime, newContent, newLikeNumber, newShareNumber);
+    User newUser = userController.getService().getById(id, session);
+    Story entity = new Story(id, newBloger, newLink, newAddTime, newContent, newLikeNumber, newShareNumber, newUser);
     storyController.update(entity, session);
   }
 
