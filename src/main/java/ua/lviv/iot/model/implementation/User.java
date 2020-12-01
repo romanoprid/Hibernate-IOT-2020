@@ -9,7 +9,7 @@ import java.util.Set;
 
 
 @Entity
-@Table(name = "user", schema = "roman_oprysk")
+@Table(name = "user", schema = "roman_oprysk_test")
 public class User implements IGeneralModel {
 
 

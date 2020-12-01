@@ -9,7 +9,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "save_on_top", schema = "roman_oprysk")
+@Table(name = "save_on_top", schema = "roman_oprysk_test")
 public  class SaveOnTop implements IGeneralModel  {
 
 

@@ -8,7 +8,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "initialization", schema = "roman_oprysk")
+@Table(name = "initialization", schema = "roman_oprysk_test")
 public class Initialization implements IGeneralModel {
 
 
