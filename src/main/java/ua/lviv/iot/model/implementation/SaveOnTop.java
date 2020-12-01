@@ -1,7 +1,6 @@
 package ua.lviv.iot.model.implementation;
 
 
-import ua.lviv.iot.dao.implementation.GeneralDao;
 import ua.lviv.iot.model.IGeneralModel;
 
 import javax.persistence.*;
@@ -10,7 +9,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "save_on_top", schema = "roman_oprysk_test")
-public  class SaveOnTop implements IGeneralModel  {
+public class SaveOnTop implements IGeneralModel {
 
 
   public static String getTableName() {
@@ -23,6 +22,7 @@ public  class SaveOnTop implements IGeneralModel  {
   private Integer position;
   private String status;
   private Story storyId;
+
   public SaveOnTop(Integer id, Integer position, String status, Story storyId) {
     this.id = id;
     this.position = position;
@@ -66,7 +66,6 @@ public  class SaveOnTop implements IGeneralModel  {
   public void setStatus(String status) {
     this.status = status;
   }
-
 
 
   public boolean equals(Object o) {

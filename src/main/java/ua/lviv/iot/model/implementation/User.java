@@ -5,7 +5,6 @@ import ua.lviv.iot.model.IGeneralModel;
 
 import javax.persistence.*;
 import java.util.Objects;
-import java.util.Set;
 
 
 @Entity
@@ -121,8 +120,6 @@ public class User implements IGeneralModel {
   public int hashCode() {
     return Objects.hash(id, name, birthDate, followers, followings, posts);
   }
-
-
 
 
   @Override

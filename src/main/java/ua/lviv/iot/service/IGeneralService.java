@@ -16,6 +16,7 @@ public interface IGeneralService<T> {
   T getById(Integer id, Session session) throws SQLException;
 
   void create(T entity, Session session) throws SQLException;
+
   void update(T entity, Session session) throws SQLException;
 
   void delete(Integer id, Session session) throws SQLException;

@@ -7,10 +7,10 @@ import ua.lviv.iot.dao.implementation.InitializationDao;
 import ua.lviv.iot.model.implementation.Initialization;
 
 public class InitializationService extends GeneralService<Initialization> {
-  private final InitializationDao INITIALIZATION_DAO = new InitializationDao();
+  private final GeneralDao<Initialization> INITIALIZATION_DAO = new InitializationDao();
 
   @Override
   public IGeneralDao<Initialization> getDAO() {
-    return (IGeneralDao<Initialization>) INITIALIZATION_DAO;
+    return INITIALIZATION_DAO;
   }
 }

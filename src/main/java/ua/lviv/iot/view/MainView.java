@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class MainView {
+  private static final Scanner INPUT = new Scanner(System.in);
+
   private final InitializationController initializationController = new InitializationController();
   private final SaveOnTopController saveOnTopController = new SaveOnTopController();
   private final SecurityController securityController = new SecurityController();
@@ -20,9 +22,9 @@ public class MainView {
 
   private final Map<String, String> menu;
   private final Map<String, Printable> methodsMenu;
-  private static final Scanner INPUT = new Scanner(System.in);
 
-  public MainView(Session session) {
+
+  public MainView(Session session) throws SQLException {
     menu = new LinkedHashMap<>();
     methodsMenu = new LinkedHashMap<>();
 
@@ -140,7 +142,7 @@ public class MainView {
     User newUser = userController.getService().getById(userId, session);
 
     Initialization entity = new Initialization(id, newLogin, newUser);
-    initializationController.update(entity, session);
+    initializationController.update(entity,session);
   }
 
 

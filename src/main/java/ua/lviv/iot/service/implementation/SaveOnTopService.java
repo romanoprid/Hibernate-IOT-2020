@@ -9,10 +9,10 @@ import ua.lviv.iot.model.implementation.Initialization;
 import ua.lviv.iot.model.implementation.SaveOnTop;
 
 public class SaveOnTopService extends GeneralService<SaveOnTop> {
-  private final SaveOnTopDao INITIALIZATION_DAO = new SaveOnTopDao();
+  private final GeneralDao<SaveOnTop> SAVE_ON_TOP_DAO = new SaveOnTopDao();
 
   @Override
   public IGeneralDao<SaveOnTop> getDAO() {
-    return (IGeneralDao<SaveOnTop>) INITIALIZATION_DAO;
+    return SAVE_ON_TOP_DAO;
   }
 }

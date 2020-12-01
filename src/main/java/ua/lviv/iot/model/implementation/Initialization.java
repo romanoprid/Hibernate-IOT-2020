@@ -30,6 +30,7 @@ public class Initialization implements IGeneralModel {
   public static String getTableName() {
     return tableName;
   }
+
   @Id
   @Column(name = "id")
   public Integer getId() {
@@ -50,8 +51,6 @@ public class Initialization implements IGeneralModel {
   public void setLogin(String login) {
     this.login = login;
   }
-
-
 
 
   public boolean equals(Object o) {

@@ -4,7 +4,7 @@ package ua.lviv.iot.controller.implementation;
 import org.hibernate.Session;
 import ua.lviv.iot.controller.IGeneralController;
 import ua.lviv.iot.model.IGeneralModel;
-import ua.lviv.iot.service.implementation.GeneralService;
+import ua.lviv.iot.service.IGeneralService;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 public abstract class GeneralController<T extends IGeneralModel> implements IGeneralController<T> {
 
   @Override
-  public abstract GeneralService<T> getService();
+  public abstract IGeneralService<T> getService();
 
   @Override
   public final void create(final T entity, final Session session) throws SQLException {
@@ -25,7 +25,7 @@ public abstract class GeneralController<T extends IGeneralModel> implements IGen
   public final void update(final T entity, final Session session) throws SQLException {
     getService().update(entity, session);
     System.out.println("Entity has been updated now");
-    System.out.println(entity.getId());
+    System.out.println(entity);
   }
 
   @Override

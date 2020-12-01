@@ -24,7 +24,7 @@ public class Story implements IGeneralModel {
   private User userId;
 
   public Story(Integer id, String bloger, String link, Integer addTime, String content, Integer likeNumber,
-               Integer shareNumber,User userId) {
+               Integer shareNumber, User userId) {
     this.id = id;
     this.bloger = bloger;
     this.link = link;
